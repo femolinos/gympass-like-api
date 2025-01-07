@@ -2,31 +2,31 @@
 
 GymPass style app.
 
-## RFs (Requisitos funcionais)
+## FRs (Functional Requirements)
 
-- [x] Deve ser possível se cadastrar;
-- [x] Deve ser possível se autenticar;
-- [x] Deve ser possível obter o perfil de um usuário logado;
-- [x] Deve ser possível obter o número de check-ins realizados pelo usuário logado;
-- [x] Deve ser possível o usuário obter seu histórico de check-ins;
-- [x] Deve ser possível o usuário buscar academias próximas (até 10km);
-- [x] Deve ser possível o usuário buscar academias pelo nome;
-- [x] Deve ser possível o usuário realizar check-in em uma academia;
-- [x] Deve ser possível validar o check-in de um usuário;
-- [x] Deve ser possível cadastrar uma academia;
+- [x] Must be possible to sign up;
+- [x] Must be possible to authenticate;
+- [x] Must be possible to obtain a user's logged profile information;
+- [x] Must be possible to obtain the check-ins' count of the logged user;
+- [x] Must be possible for the user to obtain its check-in history;
+- [x] Must be possible for the user to search for nearby gyms (max 10km);
+- [x] Must be possible for the user to search for gyms by name;
+- [x] Must be possible for the user to check-in at a gym;
+- [x] Must be possible to validate a user's check-in;
+- [x] Must be possible to register a gym;
 
-## RNs (Regras de negócio)
+## BRs (Business Rules)
 
-- [x] O usuário não deve poder se cadastrar com um e-mail duplicado;
-- [x] O usuário não pode fazer 2 check-ins no mesmo dia;
-- [x] O usuário não pode fazer check-in se não estiver perto (100m) da academia;
-- [x] O check-in só pode ser validado até 20 minutos após criado;
-- [x] O check-in só pode ser validado por administradores;
-- [x] A academia só pode ser cadastrada por administradores;
+- [x] The user can't register with a duplicate e-mail;
+- [x] The user can't check-in twice on the same day;
+- [x] The user can't check-in if he/she is not near the gym (100m);
+- [x] The check-in can only be validated within 20 minutes upon its creation;
+- [x] The check-in can only be validated by administrators;
+- [x] The gym can only be registered by administrators;
 
-## RNFs (Requisitos não-funcionais)
+## NFRs (Non-Functional Requirements)
 
-- [x] A senha do usuário precisa estar criptografada;
-- [x] Os dados da aplicação precisam estar persistidos em um banco PostgreSQL;
-- [x] Todas as listas de dados precisam estar paginadas com 20 itens por página;
-- [x] O usuário deve ser identificado por um JWT (JSON Web Token);
+- [x] The user's password must be encrypted;
+- [x] The application data must be persisted in a PostgreSQL database;
+- [x] All data lists must be paginated with 20 items per page;
+- [x] The user has to be identified by a JSON Web Token (JWT);
